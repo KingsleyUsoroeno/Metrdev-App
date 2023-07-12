@@ -26,7 +26,7 @@ class LoginScreenCubit extends Cubit<LoginScreenState> {
     } catch (exception, stackTrace) {
       final String errorMessage = "$exception$stackTrace";
       debugPrint("logged error message is $errorMessage");
-      emit(LoginScreenErrorState(errorMessage: errorMessage));
+      emit(LoginScreenErrorState(errorMessage: "Something went wrong :), please try again"));
     }
   }
 }
